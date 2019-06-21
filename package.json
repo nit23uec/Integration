@@ -4,15 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "ngrok http 8037|node app.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "smooch-core": "^8.6.0"
-  },
-  "devDependencies": {
-    "ngrok": "^3.2.0"
   }
+ 
 }
