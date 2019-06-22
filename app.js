@@ -43,14 +43,14 @@ server.post('/messages', (req, res) =>
   // Create a new session
   const sessionClient = new dialogflow.SessionsClient(config);
   const sessionPath = sessionClient.sessionPath(projectId, sessionId);
-
+  var body="";
   // The text query request.
   const request = {
     session: sessionPath,
     queryInput: {
       text: {
         // The query to send to the dialogflow agent
-        text: req.messages[0].text,
+        text: req.body.messages[0].text,
         // The language used by the client (en-US)
         languageCode: 'en',
       },
