@@ -64,8 +64,9 @@ server.post('/messages', (req, res) =>
     .then(responses => {
        
         result = responses[0].queryResult;
+	    console.log(`  Response: ${result.fulfillmentText}`);
         /*console.log(`  Query: ${result.queryText}`);
-        /console.log(`  Response: ${result.fulfillmentText}`);
+     
         if (result.intent) {
             console.log(`  Intent: ${result.intent.displayName}`);
         } else {
