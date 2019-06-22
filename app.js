@@ -2,7 +2,7 @@ const express = require('express');
 const Smooch = require('smooch-core');
 const dialogflow = require('dialogflow');
 const uuid = require('uuid');
-@param {string} projectId 
+
 
 
 const KEY_ID = 'app_5d0bc7845cd7540010b82fc9';
