@@ -28,7 +28,7 @@ server.listen(process.env.PORT, function () {
 server.post('/messages', (req, res) =>
 	    
 	    
-	    {const sessionId = uuid.v4();
+	    {/*const sessionId = uuid.v4();
         const  projectId='stockprice-bibxgw';
 
   // Create a new session
@@ -60,9 +60,9 @@ server.post('/messages', (req, res) =>
     console.log(`  No intent matched.`);
   }
 	
-	
+	*/
    
-		 smooch.appUsers
+	{	 smooch.appUsers
     .sendMessage({
         userId: 'e83c4e435a64724dcb18286a',
         message: {
