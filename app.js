@@ -51,7 +51,7 @@ server.post('/messages', (req, res) =>
       text: {
         // The query to send to the dialogflow agent
 	
-        text: "Get Contact Details",
+        text: req.messages[0].text,
         // The language used by the client (en-US)
         languageCode: 'en',
       },
@@ -83,7 +83,7 @@ server.post('/messages', (req, res) =>
         userId: 'e83c4e435a64724dcb18286a',
         message: {
             type: 'text',
-            text: ${result.fulfillmentText}`,
+            text: result.fufillmentText,
             role: 'appMaker'
         }
     })
