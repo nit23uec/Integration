@@ -36,7 +36,7 @@ server.post('/messages', (req, res) =>
   }
 }
 
-const sessionClient = new dialogflow.SessionsClient(config);
+
 	const sessionId = uuid.v4();
         const  projectId='stockprice-bibxgw';
 
