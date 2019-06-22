@@ -56,7 +56,7 @@ server.post('/messages', (req, res) =>
       },
     },
   };
-const result;
+ var result;
   // Send request and log result
  sessionClient
     .detectIntent(request)
