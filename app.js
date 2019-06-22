@@ -51,7 +51,7 @@ server.post('/messages', (req, res) =>
       text: {
         // The query to send to the dialogflow agent
 	
-        text: req.messages[0].text,
+        text: req.body.messages[0].text,
         // The language used by the client (en-US)
         languageCode: 'en',
       },
