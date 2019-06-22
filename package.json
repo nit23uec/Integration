@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+     "dialogflow": "^0.10.1",
     "express": "^4.17.1",
-    "smooch-core": "^8.6.0"
+    "smooch-core": "^8.6.0",
+     "uuid": "^3.3.2"
   }
  
 }
