@@ -27,7 +27,7 @@ server.post('/messages', (req, res) =>
 	{console.log('reached request');     
 		 smooch.appUsers
     .sendMessage({
-        userId: '5d0a6dfc471133000ff7194d',
+        userId: 'e83c4e435a64724dcb18286a',
         message: {
             type: 'text',
             text: 'Live long and prosper',
