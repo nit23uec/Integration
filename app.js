@@ -7,7 +7,7 @@ const SECRET = 'Oe39zddJNf23uUUWRDqDIgSsbgJ7sLIO5rrNj-zyye5hS0-n16PamT6fWORIFzjk
 const smooch = new Smooch({
     keyId: KEY_ID,
     secret: SECRET,
-    scope: 'app'
+    scope: 'appUser'
 });
 
 
