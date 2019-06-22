@@ -32,7 +32,7 @@ server.post('/messages', (req, res) =>
         const  projectId='stockprice-bibxgw';
 
   // Create a new session
-  const sessionClient = new dialogflow.SessionsClient();
+  const sessionClient = new dialogflow.SessionsClient("63aeaada0df0743bd7b64d395a61f36a8746b54d","stockprice-bibxgw@appspot.gserviceaccount.com");
   const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 
   // The text query request.
