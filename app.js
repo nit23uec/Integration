@@ -28,7 +28,7 @@ server.listen(process.env.PORT, function () {
 server.post('/messages', (req, res) =>
 	    
 	    
-	    {/*const sessionId = uuid.v4();
+	    /*const sessionId = uuid.v4();
         const  projectId='stockprice-bibxgw';
 
   // Create a new session
