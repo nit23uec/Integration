@@ -1,6 +1,7 @@
 const express = require('express');
 const Smooch = require('smooch-core');
 
+
 const KEY_ID = 'app_5d0bc7845cd7540010b82fc9';
 const SECRET = 'Hm_0R2Kj-nk-UypiTAtiw1gDYzOb377bhw5QBOYkMAgqmWi7XmQh1fTKAo6fe8RifmVRFdYLMCZns2f_fKRXPg';
 
