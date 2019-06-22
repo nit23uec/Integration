@@ -1,8 +1,8 @@
 const express = require('express');
 const Smooch = require('smooch-core');
 
-const KEY_ID = 'act_5d0c7538e7753c0010ec37ee';
-const SECRET = 'Oe39zddJNf23uUUWRDqDIgSsbgJ7sLIO5rrNj-zyye5hS0-n16PamT6fWORIFzjk9QZ1ep_9Rm4_t3wJv1Qf3Q';
+const KEY_ID = 'app_5d0bc7845cd7540010b82fc9';
+const SECRET = 'Hm_0R2Kj-nk-UypiTAtiw1gDYzOb377bhw5QBOYkMAgqmWi7XmQh1fTKAo6fe8RifmVRFdYLMCZns2f_fKRXPg';
 
 const smooch = new Smooch({
     keyId: KEY_ID,
