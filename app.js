@@ -83,7 +83,7 @@ server.post('/messages', (req, res) =>
         userId: 'e83c4e435a64724dcb18286a',
         message: {
             type: 'text',
-            text: result.fulfillmentText,
+            text: ${result.fulfillmentText}`,
             role: 'appMaker'
         }
     })
