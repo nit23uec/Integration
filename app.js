@@ -28,7 +28,7 @@ server.listen(process.env.PORT, function () {
 server.post('/messages', (req, res) =>
 	    
 	    
-	    /*const sessionId = uuid.v4();
+	    {	    const sessionId = uuid.v4();
         const  projectId='stockprice-bibxgw';
 
   // Create a new session
@@ -41,9 +41,9 @@ server.post('/messages', (req, res) =>
     queryInput: {
       text: {
         // The query to send to the dialogflow agent
-        text: 'hello',
+        text: 'Get Contact Details',
         // The language used by the client (en-US)
-        languageCode: 'en-US',
+        languageCode: 'en',
       },
     },
   };
@@ -51,18 +51,18 @@ server.post('/messages', (req, res) =>
   // Send request and log result
   const responses = await sessionClient.detectIntent(request);
   console.log('Detected intent');
-  const result = responses[0].queryResult;
+ /* const result = responses[0].queryResult;
   console.log(`  Query: ${result.queryText}`);
   console.log(`  Response: ${result.fulfillmentText}`);
   if (result.intent) {
     console.log(`  Intent: ${result.intent.displayName}`);
   } else {
     console.log(`  No intent matched.`);
-  }
+  }*/
 	
-	*/
+	
    
-	{	 smooch.appUsers
+		 smooch.appUsers
     .sendMessage({
         userId: 'e83c4e435a64724dcb18286a',
         message: {
