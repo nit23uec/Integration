@@ -50,26 +50,26 @@ server.post('/messages', (req, res) =>
     queryInput: {
       text: {
         // The query to send to the dialogflow agent
-        text: 'Get Contact Details',
+        text: req.messages[0].text,
         // The language used by the client (en-US)
         languageCode: 'en',
       },
     },
   };
-
+const result;
   // Send request and log result
  sessionClient
     .detectIntent(request)
     .then(responses => {
-        console.log('Detected intent');
-        const result = responses[0].queryResult;
-        console.log(`  Query: ${result.queryText}`);
-        console.log(`  Response: ${result.fulfillmentText}`);
+       
+        result = responses[0].queryResult;
+        /*console.log(`  Query: ${result.queryText}`);
+        /console.log(`  Response: ${result.fulfillmentText}`);
         if (result.intent) {
             console.log(`  Intent: ${result.intent.displayName}`);
         } else {
             console.log(`  No intent matched.`);
-        }
+        }*/
     })
     .catch(err => {
         console.error('ERROR:', err);
@@ -81,7 +81,7 @@ server.post('/messages', (req, res) =>
         userId: 'e83c4e435a64724dcb18286a',
         message: {
             type: 'text',
-            text: 'Live long and prosper',
+            text: result.fulfillmentText,
             role: 'appMaker'
         }
     })
